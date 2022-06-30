@@ -1,0 +1,4 @@
+<h1>Aplicacion de tecnologias WEB</h1>
+<p><strong>Nombre:</strong> Hector Jimenez</p>
+<p><strong>Nrc:</strong> 8496</p>
+<p><strong>Fecha:</strong> 30-06-2022</p>

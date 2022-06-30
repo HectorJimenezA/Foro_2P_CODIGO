@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+</head>
+
+<body>
+	<h2>Objeto XMLHttpRequest</h2>
+	<button type="button" onclick="leerTXT()">Cambiar contenido del texto</button>
+	<div id="ejemplo1">
+		<p>Deje que AJAX cambie este texto, por el archivo "archivo1.txt".</p>
+	</div>
+	
+	<script>
+		function leerTXT()
+		{
+			const xhttp = new XMLHttpRequest();
+			xhttp.onload = function()
+			{
+				document.getElementById("ejemplo1").innerHTML = this.responseText;
+			}
+			xhttp.open("GET", "txt/archivo1.txt");
+			xhttp.send();
+		}
+</script>
+</body>
+</html>
